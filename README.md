@@ -3,8 +3,11 @@
 - Create React App
 - Configure TailwindCSS
 - Header
+- Routing
 - Login Form
 - Sign Up From
+- Form Validation
+- useRef Hook
 
 # rafce (react arrow function component export) to generate template for react 
 
