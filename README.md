@@ -2,8 +2,11 @@
 
 - Create React App
 - Configure TailwindCSS
-- 
+- Header
+- Login Form
+- Sign Up From
 
+# rafce (react arrow function component export) to generate template for react 
 
 # Features
 - Login/Sign Up
