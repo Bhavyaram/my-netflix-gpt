@@ -1,10 +1,9 @@
 import React, { useRef, useState } from 'react'
 import Header from './Header'
-import { NETFLIX_BACKGROUND_IMAGE, NETFLIX_PHOTO_ICON } from '../utils/constant'
+import { NETFLIX_BACKGROUND_IMAGE, NETFLIX_PHOTO_ICON, NEW_TO_NETFLIX_TEXT, ALREADY_REGISTERED_TEXT, SIGN_IN_TEXT, SIGN_UP_TEXT } from '../utils/constant'
 import { checkValidData } from '../utils/validate';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { useNavigate } from 'react-router-dom';
 import { updateProfile } from "firebase/auth";
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice'
@@ -12,7 +11,6 @@ import { addUser } from '../utils/userSlice'
 const Login = () => {
     const [isSignInForm, setIsSignInForm] = useState(true);
     const [errorMessage, setErrorMessage] = useState(null);
-    const navigate = useNavigate();
     const dispatch = useDispatch();
     
     //useRef for form validation which gives the results as a object. it will create a reference(i.e, object)
@@ -51,14 +49,14 @@ const Login = () => {
           }).then(() => {
             const { uid, email, displayName, photoURL } = auth.currentUser;
           dispatch(addUser({uid: uid, email:email, displayName:displayName, photoURL: photoURL}));
-            navigate("/browse");
+            
             // Profile updated!
             // ...
           }).catch((error) => {
             setErrorMessage(error.message)
           });
 
-           navigate("/browse");
+          
            console.log(user);
              })
             .catch((error) => {
@@ -73,7 +71,6 @@ const Login = () => {
   .then((userCredential) => {
     // Signed in 
     const user = userCredential.user;
-    navigate("/browse")
     console.log(user);
     // ...
   })
@@ -97,7 +94,7 @@ const Login = () => {
         </div>
         <form onSubmit={(e) => e.preventDefault()} className=' absolute p-12 bg-black w-3/12 my-36 mx-auto right-0 left-0 text-white bg-opacity-80'>
             <h1 className='font-bold text-3xl py-4'>
-                {isSignInForm ? "Sign In" : "Sign Up"}
+                {isSignInForm ? SIGN_IN_TEXT : SIGN_UP_TEXT}
                 </h1>
                 {!isSignInForm && (
             <input ref={name} type='text' placeholder='Full Name' className='p-4 my-4 w-full bg-gray-700 rounded-lg' />
@@ -112,10 +109,10 @@ const Login = () => {
             <button className='p-4 my-6 bg-red-700 rounded-lg w-full'
             onClick={handleButtonClick}
             >
-            {isSignInForm ? "Sign In" : "Sign Up"}
+            {isSignInForm ? SIGN_IN_TEXT : SIGN_UP_TEXT}
             </button>
             <p className='py-4 cursor-pointer'onClick={toogleSignInForm}>
-            {isSignInForm ? "New to Netflix? Sign up Now." : "Already registered! Sign In Now."}
+            {isSignInForm ? NEW_TO_NETFLIX_TEXT : ALREADY_REGISTERED_TEXT}
                 </p>
         </form>
     </div>

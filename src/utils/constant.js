@@ -3,4 +3,12 @@ export const NETFLIX_BACKGROUND_IMAGE = "https://assets.nflxext.com/ffe/siteui/v
 
 export const NETFLIX_USER_ICON = "https://i.pinimg.com/564x/5b/50/e7/5b50e75d07c726d36f397f6359098f58.jpg";
 
-export const NETFLIX_PHOTO_ICON = "https://pbs.twimg.com/media/E7ofkd0XMAoHptS.jpg"
+export const NETFLIX_PHOTO_ICON = "https://mir-s3-cdn-cf.behance.net/project_modules/disp/64623a33850498.56ba69ac2a6f7.png";
+
+export const NEW_TO_NETFLIX_TEXT = "New to Netflix? Sign up Now.";
+
+export const ALREADY_REGISTERED_TEXT = "Already registered! Sign In Now.";
+
+export const  SIGN_IN_TEXT = "Sign In";
+
+export const SIGN_UP_TEXT = "Sign Up";

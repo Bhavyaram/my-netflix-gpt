@@ -16,6 +16,10 @@
 - Dispatch an action
 - Implemented sign out feature
 - update profile API call
+- Bug fix: sign up user display name & profile picture update
+- BugFix: If the user is not logged in redirect /browse  to loginpage and vice-versa
+- unsubscribed to the onAuthStateChange callback
+- Add hardcoded values to the constant files
 - Fetch Movies from TMDB movies
 
 # rafce (react arrow function component export) to generate template for react 
