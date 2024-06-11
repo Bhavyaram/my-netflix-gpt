@@ -12,3 +12,13 @@ export const ALREADY_REGISTERED_TEXT = "Already registered! Sign In Now.";
 export const  SIGN_IN_TEXT = "Sign In";
 
 export const SIGN_UP_TEXT = "Sign Up";
+
+export const NOW_PLAYING_API = "https://api.themoviedb.org/3/movie/now_playing?page=1";
+
+export const API_OPTIONS = {
+    method: 'GET',
+    headers: {
+      accept: 'application/json',
+      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyNmM4NDg2ZjJkZGViOTFiYWUwNGRkZWI1MjNkMWFlYyIsInN1YiI6IjY2Njg3YzNkMGE2YTk4OTY5MzhhZmI4YSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.z_tFWCj4geVJ6SvrwBI5SP_4ke_SdxjtUb7pWn03YDw'
+    }
+  };

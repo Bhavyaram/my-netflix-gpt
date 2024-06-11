@@ -20,7 +20,8 @@
 - BugFix: If the user is not logged in redirect /browse  to loginpage and vice-versa
 - unsubscribed to the onAuthStateChange callback
 - Add hardcoded values to the constant files
-- Fetch Movies from TMDB movies
+- Registered for TMDB API and get access API
+- Fetch Movies from TMDB Now playing movies list API
 
 # rafce (react arrow function component export) to generate template for react 
 

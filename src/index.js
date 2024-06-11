@@ -6,7 +6,9 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  //using React.StrictMode:: In our local project only API call happens twice but not in PROD
+  //This is happening coz, react does extra rendering of component to check inconsistency in app
+ <React.StrictMode>
     <App />
   </React.StrictMode>
 );
