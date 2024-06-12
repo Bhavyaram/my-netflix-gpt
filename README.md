@@ -22,6 +22,15 @@
 - Add hardcoded values to the constant files
 - Registered for TMDB API and get access API
 - Fetch Movies from TMDB Now playing movies list API
+- custom hook for nowPlayingMovies, useMovieTrailer
+- create movie sclice
+- update store with movie date
+- Planning Main Container & Secondary conatiner
+- Fetch data for trailer video
+- Update the store with trailer video data
+- Embeded the youtube video & make it autoplay and mute
+- TailwindCSS to make make main container look awesome
+-
 
 # rafce (react arrow function component export) to generate template for react 
 
