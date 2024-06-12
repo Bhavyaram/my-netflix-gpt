@@ -11,7 +11,7 @@ const MainContainer = () => {
     if (!movies) return;
 
 
-    const mainMovie = movies[11];
+    const mainMovie = movies[12];
 
     //console.log(mainMovie);
 

@@ -15,7 +15,13 @@ export const SIGN_UP_TEXT = "Sign Up";
 
 export const NOW_PLAYING_API = "https://api.themoviedb.org/3/movie/now_playing?page=1";
 
-export const MOVIE_TRAILER_API = "https://api.themoviedb.org/3/movie/"
+export const MOVIE_TRAILER_API = "https://api.themoviedb.org/3/movie/";
+
+export const POSTER_CDN_URL = "https://image.tmdb.org/t/p/w500/";
+
+export const POPULAR_MOVIES_API = "https://api.themoviedb.org/3/movie/popular?page=1";
+
+export const UPCOMING_API= "https://api.themoviedb.org/3/movie/upcoming?page=1";
 
 export const API_OPTIONS = {
     method: 'GET',

@@ -30,7 +30,12 @@
 - Update the store with trailer video data
 - Embeded the youtube video & make it autoplay and mute
 - TailwindCSS to make make main container look awesome
--
+- Build Secondary component
+- Build Movie List
+- Build Movie card
+- TMDB Image CDN URL
+- TailwindCSS for seconday component
+- usePopularMovies & use UpcomingMovies custom hooks
 
 # rafce (react arrow function component export) to generate template for react 
 
