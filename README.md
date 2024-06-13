@@ -36,6 +36,7 @@
 - TMDB Image CDN URL
 - TailwindCSS for seconday component
 - usePopularMovies & use UpcomingMovies custom hooks
+- GPT search feature
 
 # rafce (react arrow function component export) to generate template for react 
 
